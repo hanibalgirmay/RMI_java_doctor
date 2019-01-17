@@ -73,47 +73,47 @@ public class Questions extends JFrame
         Game();
       q =new String[10][5];
       //Questions are stored in q[][]
-      q[0][0]="how many days in an year?";
-      q[0][1]="two hundred";
-      q[0][2]="threehundred sixtyfive";
-      q[0][3]="hundred";
-      q[0][4]="four hundred";
+      q[0][0]="Are you filling in this questionnaire for: ";
+      q[0][1]="Yourself";
+      q[0][2]="Your child ";
+      q[0][3]=" Your spouse or partner ";
+      q[0][4]="Another relative or friend ";
       
-      q[1][0]="Who Invented C?";
-      q[1][1]="Microsoft";
-      q[1][2]="Bell";
-      q[1][3]="Dennis Ritchie";
-      q[1][4]="Sun Micros";
+      q[1][0]="Which of the following best describes the reason you saw the doctor today? (Please tick all the boxes that apply) ";
+      q[1][1]="To ask for advice ";
+      q[1][2]="Because of an ongoing problem";
+      q[1][3]=" For treatment (including prescriptions) ";
+      q[1][4]=" For a routine check ";
       
-      q[2][0]="who is the pm of india?";
-      q[2][1]="nehuru";
-      q[2][2]="modi";
-      q[2][3]="abdul kalam";
-      q[2][4]="Andy Rubins";
+      q[2][0]="On a scale of 1 to 4, how important to your health and wellbeing was your reason for visiting the doctor today?   Not very important ";
+      q[2][1]="One";
+      q[2][2]="Two";
+      q[2][3]="Three";
+      q[2][4]="Four";
       
-      q[3][0]="Who Invented Google?";
-      q[3][1]="Larry Page";
-      q[3][2]="Bell";
-      q[3][3]="Dell";
-      q[3][4]="Sun Micros";
+      q[3][0]="What is your ethnic group? Please choose one section from a to e, and then tick the appropriate box to indicate your    cultural background.\r\n";
+      q[3][1]="Whitee";
+      q[3][2]="Mixed ";
+      q[3][3]="Asian or Asian British";
+      q[3][4]="Black or Black British ";
       
-      q[4][0]="in which year 2000 rupess notes came into use?";
-      q[4][1]="twothousand seventeen";
-      q[4][2]="twothousand sixteen";
-      q[4][3]="ninteen fiftyfive ";
-      q[4][4]="ninteen ninty five";
+      q[4][0]="Do you have an abnormal heartbeat? ";
+      q[4][1]="Yes ";
+      q[4][2]="No";
+      q[4][3]="Uknown ";
+      q[4][4]="";
       
-      q[5][0]="CEO of Google?";
-      q[5][1]="Sundar Pichai";
-      q[5][2]="Satyam";
-      q[5][3]="Steeve Jobs";
-      q[5][4]="Larry Page";
+      q[5][0]="Check any other symptoms that have occurred with it";
+      q[5][1]="Pain ";
+      q[5][2]="Dizziness ";
+      q[5][3]=" Sweaty ";
+      q[5][4]=" Breathing difficulty";
       
-      q[6][0]="what is the capital of india?";
-      q[6][1]="new delhi";
-      q[6][2]="hyderabad";
-      q[6][3]="mumbai";
-      q[6][4]="amaravathi";
+      q[6][0]="Do you modify your diet for : ";
+      q[6][1]="sodium (salt) ";
+      q[6][2]=" cholesterol ";
+      q[6][3]=" saturated fat ";
+      q[6][4]="sugar ";
       
       q[7][0]="sun raises in the east?";
       q[7][1]="TRUE";
@@ -144,6 +144,7 @@ public class Questions extends JFrame
       a[7][1]="TRUE";
       a[8][1]="srilekha";
       a[9][1]="mark";
+     
      
 
 
