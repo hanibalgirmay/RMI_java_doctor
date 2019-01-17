@@ -40,9 +40,8 @@ public class Questions extends JFrame
 	private JSeparator separator;
 	 String[][] a;
 	 String[][] q;
-	static int score=0;
 	int count=0;
-	int c=0;
+	int c=1;
 	static String usernameq;
 	
 	public static void main(String[] args) 
@@ -68,7 +67,6 @@ public class Questions extends JFrame
 	
 	public Questions() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        score=0;
         
         Game();
       q =new String[10][5];
@@ -121,17 +119,17 @@ public class Questions extends JFrame
       q[7][3]="hypotetical";
       q[7][4]="None";
       
-      q[8][0]="Who has written this code?";
-      q[8][1]="Bill Gates";
-      q[8][2]="srilekha";
-      q[8][3]="Student";
-      q[8][4]="Professor";
+      q[8][0]="Are you filling in this questionnaire for: ";
+      q[8][1]="Yourself";
+      q[8][2]="Your child ";
+      q[8][3]=" Your spouse or partner ";
+      q[8][4]="Another relative or friend ";
       
-      q[9][0]="Who is the ceo of fb?";
-      q[9][1]="billgates";
-      q[9][2]="mark";
-      q[9][3]="rahul gandhi";
-      q[9][4]="nagarjuna";
+      q[8][0]="Are you filling in this questionnaire for: ";
+      q[8][1]="Yourself";
+      q[8][2]="Your child ";
+      q[8][3]=" Your spouse or partner ";
+      q[8][4]="Another relative or friend ";
       //Answers are stored in a[][]
       a=new String[10][5];
       a[0][1]="threehundred sixtyfive";
@@ -159,7 +157,7 @@ public class Questions extends JFrame
 	    }
 	private void Game()
 	{	
-		setTitle("l3kh@_QUIZ:Questions");
+		setTitle("Questionnaire:Questions");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 550, 500);
 		contentPane = new JPanel();
@@ -180,9 +178,9 @@ public class Questions extends JFrame
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
 
-        final JLabel timer = new JLabel("01:00");
+        final JLabel timer = new JLabel("10:00");
         final Timer t = new Timer(1000, new ActionListener() {
-            int time = 60;
+            int time = 600;
             @Override
             public void actionPerformed(ActionEvent e) {
                 time--;
@@ -327,27 +325,13 @@ public class Questions extends JFrame
 
 	protected void BackClicked(ActionEvent evt) {
 	
-		if(c==0) {
-			
-		}else {
-			if(score==c)
-			{
-		score--;
-		c--;
-		start(c);
-			}
-			else {
-				c--;
-				start(c);
-			}
-		}
+
 		
 	}
 	protected void NextClicked(ActionEvent evt) {
 		
 		
 		if(getSelectedButtonText(opg)==a[c][1]) {
-			score++;
 			count++;
 			c++;
 		}
@@ -359,11 +343,9 @@ public class Questions extends JFrame
 			if(c!=10)
 		{
 			start(c);
-		System.out.println(score);
 		}
 		else {
-			System.out.println(score);
-			new Results().setVisible(true);
+
 			this.dispose();
 		}
 	}
